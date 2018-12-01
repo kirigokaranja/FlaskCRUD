@@ -1,10 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
     <meta charset="UTF-8">
-    <title>SignIn</title>
-</head>
-<body>
+    <title>Signin</title>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/ico" href="favicon.ico" />
 
+        <title>Sign In</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    </head>
+<body>
+<div class="container">
+    <form action="/signin" method="post">
+
+        <h1 class="text-center">Sign Up</h1>
+        <label class="password">
+            <span class="label-text">First Name</span>
+            <input type="text" name="fname"required/>
+        </label>
+        <label class="password">
+            <span class="label-text">Surname</span>
+            <input type="text" name="sname"required/>
+        </label>
+        <label class="password">
+            <span class="label-text">Email</span>
+            <input type="email" name="email" required/>
+        </label>
+        <label class="password">
+            <span class="label-text">Phone Number</span>
+            <input type="number" name="number" required/>
+        </label>
+        <label class="password">
+            <span class="label-text">Password</span>
+            <input type="password" name="password" required/>
+        </label>
+        <div class="text-center">
+            <button type="submit" class="submit">SIGN UP</button>
+        </div>
+
+    </form>
+</div>
 </body>
 </html>

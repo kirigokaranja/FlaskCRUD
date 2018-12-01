@@ -5,6 +5,11 @@
     <title>Home Page</title>
 </head>
 <body>
+<h1>Users Information</h1>
+{% for user in users %}
+<p>{{ user.email }}</p>
+<p>{{ user.password }}</p>
+{% endfor %}
 
 </body>
 </html>
